@@ -1,0 +1,6 @@
+data/*
+experiments/*
+figures/*
+!data/.gitkeep
+!experiments/.gitkeep
+!figures/.gitkeep
