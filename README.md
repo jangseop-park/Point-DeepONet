@@ -81,8 +81,8 @@ Ensure Python 3.7+ is installed. Then run:
 ### 3. Data Preparation
 #### 3.1. Data Sampling
 
-- **Notebook:** `1.Data_preprocessing/1.1.data_sampling.ipynb`
-
+- **Notebook:** [1.Data_preprocessing/1.1.data_sampling.ipynb](https://github.com/jangseop-park/Point-DeepONet/blob/main/1.Data_preprocessing/1.1.data_sampling.ipynb)
+  
 Sample point clouds from finite element meshes.
 
 ```bash
@@ -90,6 +90,8 @@ Sample point clouds from finite element meshes.
 ```
 
 #### 3.2. Dataset Splitting
+
+- **Notebook:** [1.Data_preprocessing/1.2.split_dataset.ipynb](https://github.com/jangseop-park/Point-DeepONet/blob/main/1.Data_preprocessing/1.2.split_dataset.ipynb)
 
 Split dataset into training and validation sets.
 
@@ -111,7 +113,7 @@ Note: Install OpenGL for PyVista:
 
 #### 4.1. visualize VTK files
 
-- **Notebook:** `2.Data_visualization/2.1.visualize_vtk.ipynb`
+- **Notebook:** [2.Data_visualization/2.1.visualize_vtk.ipynb](https://github.com/jangseop-park/Point-DeepONet/blob/main/2.Data_visualization/2.1.visualize_vtk.ipynb)
 
 Visualize finite element meshes and simulation results.
 
@@ -120,6 +122,9 @@ Visualize finite element meshes and simulation results.
 ```
 
 #### 4.2.visualize point clouds
+
+- **Notebook:** [2.Data_visualization/2.2.visualize_point_clouds.ipynb](https://github.com/jangseop-park/Point-DeepONet/blob/main/2.Data_visualization/2.2.visualize_point_clouds.ipynb)
+  
 Inspect sampled point cloud data.
 
 ```bash
@@ -129,7 +134,7 @@ Inspect sampled point cloud data.
 ### 5. Model Training 
 #### 5.1. **PointNet**
 
-- **Script:** `3.PointNet/main.py`
+- **Script:** [3.PointNet/main.py](https://github.com/jangseop-park/Point-DeepONet/blob/main/3.PointNet/main.py)
 
 ```bash
     python main.py \
@@ -147,14 +152,15 @@ Inspect sampled point cloud data.
         --scaling 0.53 \
         --base_dir ../experiments
 ```
-- **Notebook:** `3.PointNet/PointNet.ipynb`
+- **Notebook:** [2.Data_visualization/3.PointNet/PointNet.ipynb](https://github.com/jangseop-park/Point-DeepONet/blob/main/3.PointNet/PointNet.ipynb)
 
 ```bash
     jupyter notebook 3.PointNet/PointNet.ipynb
 ```
 
 #### 5.2. **DeepONet**
-- **Script:** `4.DeepONet/main.py`
+- **Script:** [4.DeepONet/main.py](https://github.com/jangseop-park/Point-DeepONet/blob/main/4.DeepONet/main.py)
+  
 ```bash
     python main.py \
         --gpu 0 \
@@ -171,15 +177,14 @@ Inspect sampled point cloud data.
         --split_method random \
         --base_dir ../experiments
 ```
-
-- **Notebook:** `4.DeepONet/DeepONet.ipynb`
+- **Notebook:** [4.DeepONet/DeepONet.ipynb](https://github.com/jangseop-park/Point-DeepONet/blob/main/4.DeepONet/DeepONet.ipynb)
 
 ```bash
     jupyter notebook 4.DeepONet/DeepONet.ipynb
 ```
 
 #### 5.3. **Point-DeepONet**
-- **Script:** `5.Point_DeepONet/main.py`
+- **Script:** [5.Point_DeepONet/main.py](https://github.com/jangseop-park/Point-DeepONet/blob/main/5.Point_DeepONet/main.py)
 
 ```bash
     python main.py \
@@ -201,8 +206,7 @@ Inspect sampled point cloud data.
         --trunk_encoding_hidden_dim 100 \
         --fc_hidden_dim 100
 ```
-
-- **Notebook:** `5.Point_DeepONet/PointDeepONet.ipynb`
+- **Notebook:** [5.Point_DeepONet/PointDeepONet.ipynb](https://github.com/jangseop-park/Point-DeepONet/blob/main/5.Point_DeepONet/PointDeepONet.ipynb)
 
 ```bash
     jupyter notebook 5.Point_DeepONet/PointDeepONet.ipynb
